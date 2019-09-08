@@ -1,6 +1,5 @@
 using DokanNet;
 using Microsoft.Win32;
-using SwiftPbo;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

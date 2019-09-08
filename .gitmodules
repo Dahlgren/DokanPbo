@@ -1,3 +1,6 @@
 [submodule "SwiftPbo"]
 	path = SwiftPbo
 	url = https://github.com/Dahlgren/SwiftPbo.git
+[submodule "bis-file-formats"]
+	path = bis-file-formats
+	url = https://github.com/Braini01/bis-file-formats.git

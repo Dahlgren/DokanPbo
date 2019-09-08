@@ -1,10 +1,7 @@
-﻿using SwiftPbo;
+﻿using BIS.PBO;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DokanPbo
 {
@@ -37,14 +34,14 @@ namespace DokanPbo
         {
             foreach(var filePath in filePaths)
             {
-                var archive = new PboArchive(filePath);
+                var archive = new PBO(filePath);
 
-                foreach (var file in archive.Files)
+                foreach (var file in archive.FileEntries)
                 {
                     var prefix = "";
-                    if (!string.IsNullOrEmpty(archive.ProductEntry.Prefix))
+                    if (!string.IsNullOrEmpty(archive.Prefix))
                     {
-                        prefix = "\\" + archive.ProductEntry.Prefix;
+                        prefix = "\\" + archive.Prefix;
                     }
 
                     var wholeFilePath = (prefix + "\\" + file.FileName).ToLower();

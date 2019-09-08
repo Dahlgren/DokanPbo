@@ -57,13 +57,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SwiftPbo\SwiftPbo\SwiftPbo.csproj">
-      <Project>{8688a0f5-a404-4707-b98b-563213964e72}</Project>
-      <Name>SwiftPbo</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\bis-file-formats\BIS.PBO\BIS.PBO.csproj">
+      <Project>{df55f4ce-567f-4608-bdc8-e1a06a1cb3f7}</Project>
+      <Name>BIS.PBO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
